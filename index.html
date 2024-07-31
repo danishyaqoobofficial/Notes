@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Notes</title>
+</head>
+<body>
+    <section class="bg-[#ff5e00] w-full ">
+        <div class="px-[15px] md:px-[20px] py-[22px] flex items-center gap-[12px] max-w-[1440px] mx-auto ">
+            <svg class="h-[26px] w-[26px] fill-white " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M64 32C28.7 32 0 60.7 0 96L0 416c0 35.3 28.7 64 64 64l224 0 0-112c0-26.5 21.5-48 48-48l112 0 0-224c0-35.3-28.7-64-64-64L64 32zM448 352l-45.3 0L336 352c-8.8 0-16 7.2-16 16l0 66.7 0 45.3 32-32 64-64 32-32z"/></svg>
+            <p class="text-white text-[18px] ">Notes</p>
+        </div>
+    </section>
+    <section class="max-w-[1440px] mx-auto py-[22px] px-[15px] md:px-[20px] ">
+        <div class="flex items-center justify-end ">
+            <div class="flex items-center gap-[6px] group custom_transition h-[50px] relative pr-[28px] cursor-pointer " onclick="add_btn()">
+                <span class="flex items-center justify-center rounded-[100px] h-full w-[50px] relative z-50">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-[20px] relative z-50 w-[20px] custom_transition fill-white " viewBox="0 0 320 512"><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg>
+                </span>
+                <p class="group-hover:text-white custom_transition relative z-50 select-none ">Add Note</p>
+                <div class="h-full bg-[#ff5e00] rounded-[30px] absolute w-[50px] group-hover:w-full custom_transition z-20"></div>
+            </div>
+        </div>
+        <div class="mt-[30px]" id="notes_main">
+            
+        </div>
+    </section>
+    <script src="/app.js"></script>
+</body>
+</html>
