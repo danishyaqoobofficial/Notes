@@ -53,6 +53,7 @@ function edit(e) {
 function del(e) {
     let note_box = e.closest('#note_box');
     note_box.classList.add('!hidden');
+    localStorage.removeItem('data');
 }
 
 
